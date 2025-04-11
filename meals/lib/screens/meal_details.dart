@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:meals/models/meal.dart';
@@ -34,7 +32,7 @@ class MealDetailsScreen extends ConsumerWidget {
             );
           },
           icon: AnimatedSwitcher(
-            duration: const Duration(milliseconds: 300),
+            duration: const Duration(milliseconds: 3000),
             transitionBuilder: (child, animation) {
               return RotationTransition(
                 turns: Tween<double>(begin: 0.8, end: 1).animate(animation),
